@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Frontend.master.cs" Inherits="FireWebSite.MasterPages.Frontend" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="~/Styles/StyleSheetMaster.css" rel="stylesheet" type="text/css" media="screen" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="PageWrapper">
+            <header><a href="/">Header Goes Here</a></header>
+            <nav>Menu Goes Here</nav>
+            <section id="MainContent">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </section>
+            <aside id="Sidebar"> Sidebar Goes Here</aside>
+            <footer>Footer Goes Here</footer>
+        </div>
+    </form>
+</body>
+</html>
