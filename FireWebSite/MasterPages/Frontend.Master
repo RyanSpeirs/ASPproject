@@ -10,15 +10,24 @@
     <link href="~/Styles/StyleSheetMaster.css" rel="stylesheet" type="text/css" media="screen" runat="server" />
 </head>
 <body>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        <header>
+            <a href="../Default.aspx"><img id="logo" src="Images/Untitled.png" /></a>
+            <nav><a href="/">Home Page</a><a href="" >News</a></nav>
+        </header>
+    </asp:ContentPlaceHolder>
     <form id="form1" runat="server">
         <div id="PageWrapper">
-            <header><a href="/">Header Goes Here</a></header>
-            <nav>Menu Goes Here</nav>
             <section id="MainContent">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
             </section>
-            <aside id="Sidebar"> Sidebar Goes Here</aside>
+            
+                <aside id="Sidebar">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server"> 
+                        
+                    </asp:ContentPlaceHolder>
+                </aside>
             <footer>Footer Goes Here</footer>
         </div>
     </form>
