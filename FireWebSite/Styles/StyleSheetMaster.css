@@ -1,45 +1,72 @@
-﻿html {
-    background-image: linear-gradient(black, rgb(51, 51, 51), darkred, red, orangered, yellow, LightGoldenRodYellow);
+﻿
+
+*{border: 1px solid red;}
+
+
+body {
+    background: linear-gradient(to bottom right, rgb(253, 253, 253), rgb(242, 234, 184), rgb(232, 212, 58), orange, tomato, rgb(103, 128, 159));
     background-size: cover;
-    
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: auto;
+    border: 2px dashed green;
 }
 
 #PageWrapper {
     width: 920px;
     margin: auto;
+    border: 2px dashed blue;
+    min-height: 90vh;
 }
 
 /*#region Main Content */
 section#MainContent {
     width: 664px;
     float: left;
-    background-color: rgba(170,170,100, 0.8);
+    background-color: #6e6e6e;
+    padding: 2px;
+    color: #e0e0e0;
+    border: 2px solid limegreen;
 }
 
     section#MainContent a {
-        color: #39b752;
+        color: #00ccff;
+        text-decoration: none;
     }
 
         section#MainContent a:visited {
-            color: #ff0000;
+            color: #a40000;
             text-decoration: underline;
         }
 
         section#MainContent a:hover {
-            color: #ffa500;
-            text-decoration: underline;
+            color: #c90016;
+            font-style: italic;
+            text-decoration: none;
         }
 /*#endregion*/
 
 
-aside {
+#logo {
+    clear:both;
+    align-self:center;
+
+}
+
+nav {
+    clear:both;
+}
+
+#Sidebar {
     background-color: gray;
     width: 180px;
     min-height: 150px;
     max-height: 650px;
-    float: left;
+    float: right;
     border-radius: 25px;
-    margin: 30px;
+    margin: 5px;
+    padding:3px;
 }
 
 footer {

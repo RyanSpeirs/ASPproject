@@ -1,3 +1,7 @@
 ﻿body {
     background-color: rgb(200, 110, 120);
 }
+
+#Inset {
+    max-width:90%;
+}
