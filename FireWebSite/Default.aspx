@@ -1,12 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/Frontend.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="FireWebSite.Default" %>
+﻿<%@ Page Title="THis is the default Homepage" Language="C#" MasterPageFile="~/MasterPages/Frontend.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="FireWebSite.Default" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <div>
-        <h1>Content 1</h1>
-    </div>
+    <!-- This placeholder is for head references, eg running a javascript --> 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="jumbotron">
-        <h1>ASP.NET</h1>
+        <h1>Main Content</h1>
         <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
         <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
     </div>
@@ -41,4 +39,7 @@
             </p>
         </div>
     </div>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
+    This is the sidebar for Default.aspx
 </asp:Content>

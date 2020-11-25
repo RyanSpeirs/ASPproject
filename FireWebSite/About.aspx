@@ -1,9 +1,7 @@
 ﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/MasterPages/Frontend.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="FireWebSite.About" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <div>
-        <h1>Content 1</h1>
-    </div>
+    <!-- This placeholder is for head references, eg running a javascript --> 
 </asp:Content>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
